@@ -1,1 +1,1 @@
-A collection of resources I used/created to learn C
+A collection of resources I used/created to learn Python
