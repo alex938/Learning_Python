@@ -10,11 +10,11 @@ total_combinations = 0
 #find and print combinations
 def find_combinations(target, coins, combination, start_index):
     global total_combinations
-    if target == 0:#valid combination
+    if target == 0: #valid combination
         print(combination)
         total_combinations += 1 
         return
-    if target < 0:#not valid as its gone under
+    if target < 0: #not valid as its gone under
         return
     
     #each coin starting from the current index
