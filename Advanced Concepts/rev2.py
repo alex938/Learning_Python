@@ -1,7 +1,7 @@
 #coins in pence
 coins = [1, 2, 5, 10, 20, 50, 100]
 
-#amount target
+#amount target in pence
 two_pounds = 200
 
 #the global counter
