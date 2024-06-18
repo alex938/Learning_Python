@@ -35,3 +35,24 @@ Output:
     myfunc1()
         myfunc1 has no parameters
         and prints 'Hello'.
+
+
+
+            
+from typing import NewType
+UserPin = NewType('UserPin', int)
+
+def is_pin_valid(user_pin: UserPin) -> bool:
+    if len(str(user_pin)) < 5:
+        return True
+    return False
+
+while True:
+    try:
+        pin_entry = int(input("Enter PIN: "))
+        break
+    except ValueError:
+        print("Please enter a number")
+
+valid_pin_1 = is_pin_valid(UserPin(pin_entry))
+print(valid_pin_1)
