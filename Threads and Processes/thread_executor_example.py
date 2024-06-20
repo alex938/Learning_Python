@@ -9,3 +9,4 @@ def calc_cube(value):
 my_tpe = ThreadPoolExecutor(max_workers=3)
 results = my_tpe.map(calc_cube, range(10))
 print(list(results))
+my_tpe.shutdown()
