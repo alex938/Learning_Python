@@ -1,7 +1,7 @@
 def concat_phone_number(*, network: str, number: str) -> str:
     return network + number
 
-def main():
+def main() -> None:
     network: str = "27567"
     number: str = "844488"
 
